@@ -7,7 +7,8 @@
   "extensions": [
     "ms-azuretools.vscode-docker",
     "ms-vscode.js-debug",
-    "dbaeumer.vscode-eslint"
+    "dbaeumer.vscode-eslint",
+    "yassine-ouhadi.feature-assured"
   ],
   "workspaceFolder": "/workspace",
   "mounts": [
@@ -18,5 +19,6 @@
     "CYPRESS_CACHE_FOLDER": "/workspace/.cache/Cypress",
     "DISPLAY": "${localEnv:DISPLAY}"
   },
-  "remoteUser": "root"
+  "remoteUser": "root",
+  "postCreateCommand": "echo 3 | npx feature-assured add-examples"
 }
